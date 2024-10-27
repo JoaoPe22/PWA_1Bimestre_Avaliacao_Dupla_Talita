@@ -1,23 +1,39 @@
 body {
   font-family: sans-serif;
-}
-
-/* html,
-  .fullscreen {
-    display: flex;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  } */
-
-
-.fullscreen {
-  display: flex;
-  height: 100%;
   margin: 0;
   padding: 0;
+}
+
+/* Tabela */
+.fullscreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+}
+
+table {
+  border: 2px solid #000;
+  text-align: center;
+  border-collapse: collapse;
   width: 100%;
+  max-width: 1300px;
+}
+
+@media (max-width: 760px) {
+  table {
+    width: 100%;
+  }
+
+  td,
+  th {
+    padding: 2px;
+    font-size: 8px;
+  }
+
+  .col1 {
+    width: auto;
+  }
 }
 
 col {
@@ -28,30 +44,67 @@ col {
   width: 200px;
 }
 
-table {
-  border: 2px solid #000;
-  text-align: center;
-  border-collapse: collapse;
-  width: 100%;
-}
-
 th {
-  border: 4px solid #dddddd;
+  border: 2px solid #000000;
   color: white;
   background: #63456b;
   width: 200px;
+  height: 35px;
 }
 
 td {
-  border: 4px solid #ffffff;
-  background: #fea38c;
+  border: 2px solid #000000;
+  background: white;
   text-align: center;
 }
 
 #white {
-  background-color: #f9f9f9;
+  background-color: #3464fb;
 }
 
-.remoto {
-  background: aqua;
+caption{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #0c6c1c;
+  display: flex;
+  align-items: center;
+  height: 85px;
+}
+
+img {
+  width: 200px;
+  padding-left: 20px;
+}
+
+/* botão de acessar página dos quadro de aulas */
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 76vh;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 75px;
+  background-color: #0c6c1c;
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin: 10px;
+}
+
+.button:hover {
+  background-color: #18b332;
 }
