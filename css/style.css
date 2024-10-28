@@ -47,7 +47,7 @@ col {
 th {
   border: 2px solid #000000;
   color: white;
-  background: #63456b;
+  background: #456b47;
   width: 200px;
   height: 35px;
 }
@@ -72,7 +72,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #0c6c1c;
+  background-color: #0a721b;
   display: flex;
   align-items: center;
   height: 85px;
